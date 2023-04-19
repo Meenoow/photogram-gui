@@ -11,9 +11,9 @@ class UsersController < ApplicationController
     #parameters: "path_username"=>"anisa"
      url_username = params.fetch("path_username")
 
-     matching_usernames =  User.where({ :username => "url_username" })
+     matching_usernames = User.where({ :username => url_username })
 
-     the_user = matching_usernames.first
+     @the_user = matching_usernames.at(0)
 
      # if the_user == nil
      # redirect_to("/404")
