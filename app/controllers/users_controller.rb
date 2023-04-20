@@ -4,7 +4,7 @@ class UsersController < ApplicationController
 
     @list_of_users = matching_users.order({ :username => :asc })
     
-    render ({ :template => "user_templates/index.html.erb" })  
+    render({ :template => "user_templates/index.html.erb" })  
   end
 
   def show
@@ -19,7 +19,7 @@ class UsersController < ApplicationController
      # redirect_to("/404")
      # else
 
-      render ({ :template => "user_templates/show.html.erb" }) 
+      render({ :template => "user_templates/show.html.erb" }) 
     
     #end
   end
