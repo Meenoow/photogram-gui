@@ -1,5 +1,18 @@
 <h1>List of photos</h1>
 
+ <form action="/insert_photo">
+  <label for="image_box">Image</label>
+  <input type="text" name="query_image" id="image_box" placeholder="Enter a URL for the image" required>
+
+  <label for="caption_box">Caption</label>
+  <input type="text" name="query_caption" id="caption_box" placeholder="Enter a caption for the photo..." required>
+
+  <label for="owner_id_box">Owner ID</label>
+  <input type="text" name="query_owner_id" id="owner_id_box" placeholder="Enter an ID of a User" required>
+
+  <button type="submit">Add Photo</button>
+</form>
+
 <table border="1">
   <tr>
     <th>
